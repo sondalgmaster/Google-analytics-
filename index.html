@@ -3,35 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PB9VK8R9');
-    </script>
-    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shosies - Pink runners</title>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB9VK8R9"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    
-    <h1>hei</h1>
-    <a href="#" class="lenke-knapp">Klikk her</a>
-    <button id="knapp">Trykk her</button>
+    <div id="grid-container">
+        <header>
+            <form>
+                <input type="search" placeholder="Cool shoes..." title="Search">
+                <button type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <img src="img/logo1.png" alt="header logo" id="logo">
+            <section>
+                <a href="#">Sign inn</a>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </section>
+        </header>
+        <nav id="global-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Children</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+        </nav>
+        <main>
+            <nav id="breadcrumbs">
+                <ul>
+                    <li>
+                        <a href="index.html">Home /</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Running shoes /</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Pink runners</a>
+                    </li>
+                </ul>
+            </nav>
 
+            <figure class="left-content-container flex-items">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies" id="active-img">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
+            </figure>
+
+            <section class="right-content-container flex-items">
+                <span id="brand-name">
+                    <a href="#">Shosies</a>
+                </span>
+                <h3>Pink runners</h3>
+                <span>1499,00 kr</span>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati</p>
+                <form>
+                    <label for="size">Size:</label>
+                    <select name="size" id="size">
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                    </select>
+                    <button>Add to cart</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            Copyright Best Shoes 4ever 2023
+        </footer>
+    </div>
 </body>
-<!-- Google tag (gtag.js) -->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8G2DQTBSH3">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-8G2DQTBSH3');
-</script>
 </html>
