@@ -1,79 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Shosies - Pink runners</title>
+  <meta charset="UTF-8">
+  <title>Søkemotoroptimalisering – Webutvikling 2024</title>
+  <meta name="description" content="Lær grunnleggende søkemotoroptimalisering, semantisk HTML, og best practices for SEO i webutvikling.">
+  <link rel="stylesheet" href="font/css/all.css">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="grid-container">
-        <header>
-            <form>
-                <input type="search" placeholder="Cool shoes..." title="Search">
-                <button type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <img src="img/logo1.png" alt="header logo" id="logo">
-            <section>
-                <a href="#">Sign inn</a>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </section>
-        </header>
-        <nav id="global-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Children</a></li>
-                <li><a href="#">Sale</a></li>
-            </ul>
-        </nav>
-        <main>
-            <nav id="breadcrumbs">
-                <ul>
-                    <li>
-                        <a href="index.html">Home /</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Running shoes /</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Pink runners</a>
-                    </li>
-                </ul>
-            </nav>
+  <script>
+    function mobilMenu(){
+      var x = document.getElementById("ham");
+      if(x.style.display === "block"){
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 
-            <figure class="left-content-container flex-items">
-                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies" id="active-img">
-                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
-                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
-                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
-            </figure>
+  <div id="grid-container">
+    <header id="page-header">
+      <h1>Søkemotoroptimalisering</h1>
+    </header>
 
-            <section class="right-content-container flex-items">
-                <span id="brand-name">
-                    <a href="#">Shosies</a>
-                </span>
-                <h3>Pink runners</h3>
-                <span>1499,00 kr</span>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati</p>
-                <form>
-                    <label for="size">Size:</label>
-                    <select name="size" id="size">
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                    </select>
-                    <button>Add to cart</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            Copyright Best Shoes 4ever 2023
-        </footer>
-    </div>
+    <nav>
+      <h2>Hovedmeny</h2>
+      <i class="fas fa-hamburger" onclick="mobilMenu()"></i>
+      <ul id="ham" class="top-menu">
+        <li><a href="#">Hjem</a></li>
+        <li><a href="#">Om oss</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li class="dropdown-point">
+          <a href="#">Oblig 1</a>
+          <ul class="dropdown-main">
+            <li><a href="#">HTML-skjema</a></li>
+            <li><a href="#">Media typer</a></li>
+            <li><a href="#">CSS Layout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <article itemscope itemtype="https://schema.org/Article">
+        <h2 itemprop="headline">Overskrift 1</h2>
+        <img src="https://picsum.photos/400/400" alt="Illustrasjon av artikkel 1" itemprop="image">
+        <p itemprop="articleBody">
+          If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning.
+        </p>
+        <a href="#" itemprop="url">Les mer om artikkel 1</a>
+      </article>
+
+      <article itemscope itemtype="https://schema.org/Article">
+        <h2 itemprop="headline">Overskrift 2</h2>
+        <img src="https://picsum.photos/400/400" alt="Illustrasjon av artikkel 2" itemprop="image">
+        <p itemprop="articleBody">
+          If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning.
+        </p>
+        <a href="#" itemprop="url">Les mer om artikkel 2</a>
+      </article>
+
+      <article itemscope itemtype="https://schema.org/Article">
+        <h2 itemprop="headline">Overskrift 3</h2>
+        <img src="https://picsum.photos/400/400" alt="Illustrasjon av artikkel 3" itemprop="image">
+        <p itemprop="articleBody">
+          If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning.
+        </p>
+        <a href="#" itemprop="url">Les mer om artikkel 3</a>
+      </article>
+
+      <article itemscope itemtype="https://schema.org/Article">
+        <h2 itemprop="headline">Overskrift 4</h2>
+        <img src="https://picsum.photos/400/400" alt="Illustrasjon av artikkel 4" itemprop="image">
+        <p itemprop="articleBody">
+          If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning.
+        </p>
+        <a href="#" itemprop="url">Les mer om artikkel 4</a>
+      </article>
+
+      <article itemscope itemtype="https://schema.org/Article">
+        <h2 itemprop="headline">Overskrift 5</h2>
+        <img src="https://picsum.photos/400/400" alt="Illustrasjon av artikkel 5" itemprop="image">
+        <p itemprop="articleBody">
+          If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning.
+        </p>
+        <a href="#" itemprop="url">Les mer om artikkel 5</a>
+      </article>
+    </main>
+
+    <aside>
+      <h2>Sideinnhold</h2>
+      <section id="video"></section>
+      <section id="rel-article">
+        <ul>
+          <li><a href="#">Relatert artikkel 1</a></li>
+          <li><a href="#">Relatert artikkel 2</a></li>
+          <li><a href="#">Relatert artikkel 3</a></li>
+          <li><a href="#">Relatert artikkel 4</a></li>
+          <li><a href="#">Relatert artikkel 5</a></li>
+        </ul>
+      </section>
+      <section id="google-btn">
+        <a class="btn" href="https://www.google.com">Google</a>
+      </section>
+    </aside>
+
+    <footer>
+      Webutvikling 2024
+    </footer>
+  </div>
 </body>
 </html>
